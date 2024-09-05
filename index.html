@@ -6,6 +6,7 @@
     <title>Instagram</title>
 
     <link href="insta.css" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
 </head>
 <body>
     <!-- <br>태그는 줄바꿈 기능이 있다. -->
@@ -14,23 +15,38 @@
     <!-- <p>태그는 줄바꿈을 표현하는 block이라는 속성이 있기 때문에
         옆에 글이 올 수 없다. -->
        
-    <div>
-        <img src="image/instagramlogo.png" width="150px" style="margin: 0%;">
-        <input type="search" value="검색"/>
-    </div>
-    <div>
-        <div class="profile">
-            <img src="image/cat.jpg" class="profile_pic" >
-        </div>      
-        <div>
-            <h2 style="margin: 0%;">half_bottle</h2>
-            <button style="background-color: white;">
-                프로필 편집
-            </button> 
+    <div id="top">
+        <div id="top_img">
+            <img src="image/instagramlogo.png" width="150px" style="margin: 0%;">
         </div>
-
-               
+            <input id="top_input" type="search" value="🔍검색" />
+            <div>
+                <i class="fas fa-home"></i>
+                <i class="far fa-paper-plane"></i>
+                <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
+            </div>
     </div>
+
+    <div class="profile">
+        <div class="profile_pic">
+            
+            <img src="image/cat.jpg" class="circle_pic" >
+            
+        </div>      
+        <div id="profile_info">
+            <div id="id" >
+                half_bottle <i class="fas fa-cog"></i>
+            </div>
+            
+            <button style="background-color: white;" >
+            프로필 편집
+            </button> 
+        
+        </div>
+    </div>
+               
+    
 
     <div>
         
@@ -42,24 +58,30 @@
         <a href="https://needleworm.github.io">needleworm.github.io</a>
     </div>
 
-    <div>
+    <div id="highlight_area">
         <div class="highlight">
             <div class="highlight_pic">
-                <img  src="image/cat2.jpg" alt="" height="35px" class="circle_pic">
+                <img  src="image/cat2.jpg" alt="" class="circle_pic">
             </div>
+
             <div >
-                😎
+            😎
             </div>
         </div>
+
+
         <div class="highlight">
             <div class="highlight_pic">
-                <img src="image/cat3.jpg" alt="" height="35px" class="circle_pic">
+                <img src="image/cat3.jpg" alt=""class="circle_pic">
             </div>
+
             <div>
                 👍
             </div>
         </div>
-        
+        <div>
+
+        </div>
     </div>
 
     <div id="stat_bar">
@@ -76,9 +98,23 @@
             189    
         </div>
     </div>
-    <br/>
-    <div>
-        아이콘이 들어갈 자리
+    
+    <div id="sub_icons">
+        <div class="selected">
+            <i class="fas fa-border-all"></i>
+        </div>
+        <div>
+            <i class="fas fa-film"></i>
+        </div>
+        <div>
+            <i class="far fa-play-circle"></i>
+        </div>
+        <div>
+            <i class="far fa-bookmark"></i>
+        </div>
+        <div>
+            <i class="fas fa-user-tag"></i>
+        </div>
     </div>
     <div>
         <div class="thumnail_grid">
